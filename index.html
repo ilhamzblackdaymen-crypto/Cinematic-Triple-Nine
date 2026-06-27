@@ -1,237 +1,380 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TRIPLENINE CINEMATIC — Jasa Video Cinematic</title>
-<meta name="description" content="Jasa pembuatan video cinematic berkualitas untuk game, promosi, event, dan konten.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRIPLENINE CINEMATIC — Jasa Video Cinematic</title>
+    <meta
+      name="description"
+      content="Jasa pembuatan video cinematic berkualitas untuk game, promosi, event, dan konten."
+    />
 
-<!-- Google Fonts: Poppins (display) + Inter (body/UI) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Poppins (display) + Inter (body/UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- Ambient cinematic backdrop: grain + vignette + light sweep -->
-<div class="backdrop" aria-hidden="true">
-  <div class="grain"></div>
-  <div class="vignette"></div>
-  <div class="lightsweep"></div>
-</div>
-
-<!-- ============ STAGE: holds both slides, handles slide transition ============ -->
-<main class="stage" id="stage">
-
-  <!-- ============ PAGE 1 ============ -->
-  <section class="slide slide--active" id="page1" aria-label="Halaman utama">
-    <div class="frame">
-
-      <!-- Viewfinder corner brackets — signature motif -->
-      <span class="bracket bracket--tl" aria-hidden="true"></span>
-      <span class="bracket bracket--tr" aria-hidden="true"></span>
-      <span class="bracket bracket--bl" aria-hidden="true"></span>
-      <span class="bracket bracket--br" aria-hidden="true"></span>
-
-      <div class="container">
-
-        <!-- Logo mark -->
-        <div class="brand reveal" style="--d:0">
-          <span class="brand__rec" aria-hidden="true"></span>
-          <span class="brand__name">TRIPLENINE<span class="brand__name-sub">CINEMATIC</span></span>
-        </div>
-
-        <!-- Hero -->
-        <header class="hero">
-          <p class="hero__eyebrow reveal" style="--d:1">SELAMAT DATANG DI WEBSITE</p>
-          <h1 class="hero__title reveal" style="--d:2">
-            JASA CINEMATIC<br><span class="hero__title-gold">TRIPLENINE</span>
-          </h1>
-          <p class="hero__subtitle reveal" style="--d:3">
-            Jasa pembuatan video cinematic berkualitas<br>
-            untuk kebutuhan game, promosi, event, konten dan lainnya.
-          </p>
-        </header>
-
-        <!-- Link cards -->
-        <nav class="links" aria-label="Tautan utama">
-
-          <a class="card reveal" style="--d:4" href="https://www.tiktok.com/@admin.paro" target="_blank" rel="noopener noreferrer">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.83-2.49V9.86a5.7 5.7 0 0 0-.93-.07A6.05 6.05 0 1 0 15.7 16V9.04a7.05 7.05 0 0 0 4.13 1.33V7.32s-1.88.09-3.23-1.5z"/></svg>
-            </span>
-            <span class="card__body">
-              <span class="card__title">TikTok Admin Paro</span>
-              <span class="card__desc">Kunjungi akun TikTok Admin Paro</span>
-            </span>
-            <span class="card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-            </span>
-          </a>
-
-          <a class="card reveal" style="--d:5" href="https://www.tiktok.com/@admin.vanz" target="_blank" rel="noopener noreferrer">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.83-2.49V9.86a5.7 5.7 0 0 0-.93-.07A6.05 6.05 0 1 0 15.7 16V9.04a7.05 7.05 0 0 0 4.13 1.33V7.32s-1.88.09-3.23-1.5z"/></svg>
-            </span>
-            <span class="card__body">
-              <span class="card__title">TikTok Admin Vanz</span>
-              <span class="card__desc">Kunjungi akun TikTok Admin Vanz</span>
-            </span>
-            <span class="card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-            </span>
-          </a>
-
-          <a class="card reveal" style="--d:6" href="https://discord.gg/your-invite" target="_blank" rel="noopener noreferrer">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .079.009c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.076.076 0 0 0-.04.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.029zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.955 2.418-2.157 2.418zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-            </span>
-            <span class="card__body">
-              <span class="card__title">Discord TripleNine Cinematic</span>
-              <span class="card__desc">Gabung ke Server Discord</span>
-            </span>
-            <span class="card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-            </span>
-          </a>
-
-          <a class="card reveal" style="--d:7" href="https://whatsapp.com/channel/your-channel" target="_blank" rel="noopener noreferrer">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.15.347-.347.521-.521.174-.174.231-.298.347-.497.116-.198.058-.371-.01-.521-.067-.149-.667-1.612-.914-2.207-.241-.579-.487-.5-.668-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.04 3.11 4.943 4.235 2.902 1.124 2.902.749 3.424.7.521-.05 1.758-.717 2.006-1.412.248-.694.248-1.289.173-1.412-.074-.124-.272-.198-.57-.347zM12.05 22h-.01a9.95 9.95 0 0 1-5.057-1.385l-.363-.215-3.755.985 1.005-3.66-.237-.376A9.95 9.95 0 0 1 2.05 12C2.05 6.486 6.535 2 12.05 2c2.654 0 5.151 1.035 7.02 2.916A9.918 9.918 0 0 1 22.05 12c0 5.514-4.486 10-9.999 10z"/></svg>
-            </span>
-            <span class="card__body">
-              <span class="card__title">Saluran TripleNine Cinematic</span>
-              <span class="card__desc">Masuk ke Saluran WhatsApp</span>
-            </span>
-            <span class="card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-            </span>
-          </a>
-
-          <!-- Internal navigation card — triggers slide transition to Page 2, no external link -->
-          <button class="card card--gold reveal" style="--d:8" id="goToResults" type="button" aria-controls="page2">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </span>
-            <span class="card__body">
-              <span class="card__title">HASIL CINEMATIC TRIPLENINE</span>
-              <span class="card__desc">Lihat Contoh Hasil Cinematic</span>
-            </span>
-            <span class="card__arrow" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-            </span>
-          </button>
-
-        </nav>
-
-        <footer class="footer reveal" style="--d:9">
-          <p>&copy; 2026 TripleNine Cinematic. All rights reserved.</p>
-        </footer>
-
-      </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ambient cinematic backdrop: grain + vignette + light sweep -->
+    <div class="backdrop" aria-hidden="true">
+      <div class="grain"></div>
+      <div class="vignette"></div>
+      <div class="lightsweep"></div>
     </div>
-  </section>
 
-  <!-- ============ PAGE 2 ============ -->
-  <section class="slide" id="page2" aria-label="Contoh hasil cinematic">
-    <div class="frame">
+    <!-- ============ STAGE: holds both slides, handles slide transition ============ -->
+    <main class="stage" id="stage">
+      <!-- ============ PAGE 1 ============ -->
+      <section
+        class="slide slide--active"
+        id="page1"
+        aria-label="Halaman utama"
+      >
+        <div class="frame">
+          <!-- Viewfinder corner brackets — signature motif -->
+          <span class="bracket bracket--tl" aria-hidden="true"></span>
+          <span class="bracket bracket--tr" aria-hidden="true"></span>
+          <span class="bracket bracket--bl" aria-hidden="true"></span>
+          <span class="bracket bracket--br" aria-hidden="true"></span>
 
-      <span class="bracket bracket--tl" aria-hidden="true"></span>
-      <span class="bracket bracket--tr" aria-hidden="true"></span>
-      <span class="bracket bracket--bl" aria-hidden="true"></span>
-      <span class="bracket bracket--br" aria-hidden="true"></span>
-
-      <div class="container">
-
-        <!-- Back button -->
-        <button class="back-btn" id="backToHome" type="button" aria-controls="page1">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-          <span>Kembali</span>
-        </button>
-
-        <header class="hero hero--page2">
-          <h1 class="hero__title">CONTOH HASIL<br><span class="hero__title-gold">CINEMATIC</span></h1>
-          <p class="hero__subtitle">Beberapa contoh hasil video kami.</p>
-        </header>
-
-        <!-- Video showcase grid -->
-        <div class="video-grid">
-
-          <article class="video-card">
-            <div class="video-card__frame">
-              <video controls poster="assets/image/thumb1.jpg" preload="none">
-                <source src="assets/video/video1.mp4" type="video/mp4">
-              </video>
+          <div class="container">
+            <!-- Logo mark -->
+            <div class="brand reveal" style="--d: 0">
+              <span class="brand__rec" aria-hidden="true"></span>
+              <span class="brand__name"
+                >TRIPLENINE<span class="brand__name-sub">CINEMATIC</span></span
+              >
             </div>
-            <div class="video-card__meta">
-              <span class="video-card__label">Video 1</span>
-              <span class="video-card__price">Rp5.000</span>
-            </div>
-          </article>
 
-          <article class="video-card">
-            <div class="video-card__frame">
-              <video controls poster="assets/image/thumb2.jpg" preload="none">
-                <source src="assets/video/video2.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-card__meta">
-              <span class="video-card__label">Video 2</span>
-              <span class="video-card__price">Rp10.000</span>
-            </div>
-          </article>
+            <!-- Hero -->
+            <header class="hero">
+              <p class="hero__eyebrow reveal" style="--d: 1">
+                SELAMAT DATANG DI WEBSITE
+              </p>
+              <h1 class="hero__title reveal" style="--d: 2">
+                JASA CINEMATIC<br /><span class="hero__title-gold"
+                  >TRIPLENINE</span
+                >
+              </h1>
+              <p class="hero__subtitle reveal" style="--d: 3">
+                Jasa pembuatan video cinematic berkualitas<br />
+                untuk kebutuhan game, promosi, event, konten dan lainnya.
+              </p>
+            </header>
 
-          <article class="video-card">
-            <div class="video-card__frame">
-              <video controls poster="assets/image/thumb3.jpg" preload="none">
-                <source src="assets/video/video3.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-card__meta">
-              <span class="video-card__label">Video 3</span>
-              <span class="video-card__price">Rp15.000</span>
-            </div>
-          </article>
+            <!-- Link cards -->
+            <nav class="links" aria-label="Tautan utama">
+              <a
+                class="card reveal"
+                style="--d: 4"
+                href="https://www.tiktok.com/@_wrld.varo?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.83-2.49V9.86a5.7 5.7 0 0 0-.93-.07A6.05 6.05 0 1 0 15.7 16V9.04a7.05 7.05 0 0 0 4.13 1.33V7.32s-1.88.09-3.23-1.5z"
+                    />
+                  </svg>
+                </span>
+                <span class="card__body">
+                  <span class="card__title">TikTok Admin Paro</span>
+                  <span class="card__desc"
+                    >Kunjungi akun TikTok Admin Paro</span
+                  >
+                </span>
+                <span class="card__arrow" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </span>
+              </a>
 
-          <article class="video-card">
-            <div class="video-card__frame">
-              <video controls poster="assets/image/thumb4.jpg" preload="none">
-                <source src="assets/video/video4.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-card__meta">
-              <span class="video-card__label">Video 4</span>
-              <span class="video-card__price">Rp20.000</span>
-            </div>
-          </article>
+              <a
+                class="card reveal"
+                style="--d: 5"
+                href="https://www.tiktok.com/@vanzjrmyy?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.83-2.49V9.86a5.7 5.7 0 0 0-.93-.07A6.05 6.05 0 1 0 15.7 16V9.04a7.05 7.05 0 0 0 4.13 1.33V7.32s-1.88.09-3.23-1.5z"
+                    />
+                  </svg>
+                </span>
+                <span class="card__body">
+                  <span class="card__title">TikTok Admin Vanz</span>
+                  <span class="card__desc"
+                    >Kunjungi akun TikTok Admin Vanz</span
+                  >
+                </span>
+                <span class="card__arrow" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </span>
+              </a>
 
+              <a
+                class="card reveal"
+                style="--d: 6"
+                href="https://discord.gg/uSkg2KGWq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .079.009c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.076.076 0 0 0-.04.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.029zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.955 2.418-2.157 2.418zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
+                    />
+                  </svg>
+                </span>
+                <span class="card__body">
+                  <span class="card__title">Discord TripleNine Cinematic</span>
+                  <span class="card__desc">Gabung ke Server Discord</span>
+                </span>
+                <span class="card__arrow" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </span>
+              </a>
+
+              <a
+                class="card reveal"
+                style="--d: 7"
+                href="https://whatsapp.com/channel/0029VbCMFdiAojYzZDNK1L0x"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.15.347-.347.521-.521.174-.174.231-.298.347-.497.116-.198.058-.371-.01-.521-.067-.149-.667-1.612-.914-2.207-.241-.579-.487-.5-.668-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.04 3.11 4.943 4.235 2.902 1.124 2.902.749 3.424.7.521-.05 1.758-.717 2.006-1.412.248-.694.248-1.289.173-1.412-.074-.124-.272-.198-.57-.347zM12.05 22h-.01a9.95 9.95 0 0 1-5.057-1.385l-.363-.215-3.755.985 1.005-3.66-.237-.376A9.95 9.95 0 0 1 2.05 12C2.05 6.486 6.535 2 12.05 2c2.654 0 5.151 1.035 7.02 2.916A9.918 9.918 0 0 1 22.05 12c0 5.514-4.486 10-9.999 10z"
+                    />
+                  </svg>
+                </span>
+                <span class="card__body">
+                  <span class="card__title">Saluran TripleNine Cinematic</span>
+                  <span class="card__desc">Masuk ke Saluran WhatsApp</span>
+                </span>
+                <span class="card__arrow" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </span>
+              </a>
+
+              <!-- Internal navigation card — triggers slide transition to Page 2, no external link -->
+              <button
+                class="card card--gold reveal"
+                style="--d: 8"
+                id="goToResults"
+                type="button"
+                aria-controls="page2"
+              >
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </span>
+                <span class="card__body">
+                  <span class="card__title">HASIL CINEMATIC TRIPLENINE</span>
+                  <span class="card__desc">Lihat Contoh Hasil Cinematic</span>
+                </span>
+                <span class="card__arrow" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </span>
+              </button>
+            </nav>
+
+            <footer class="footer reveal" style="--d: 9">
+              <p>&copy; 2026 TripleNine Cinematic. All rights reserved.</p>
+            </footer>
+          </div>
         </div>
+      </section>
 
-        <!-- WhatsApp request box -->
-        <div class="request-box">
-          <span class="request-box__rule" aria-hidden="true"></span>
-          <span class="request-box__icon" aria-hidden="true">💬</span>
-          <p class="request-box__text">
-            Kalau mau request cinematic,<br>langsung chat admin ya guys.
-          </p>
-          <a class="btn-chat" href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.15.347-.347.521-.521.174-.174.231-.298.347-.497.116-.198.058-.371-.01-.521-.067-.149-.667-1.612-.914-2.207-.241-.579-.487-.5-.668-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.04 3.11 4.943 4.235 2.902 1.124 2.902.749 3.424.7.521-.05 1.758-.717 2.006-1.412.248-.694.248-1.289.173-1.412-.074-.124-.272-.198-.57-.347zM12.05 22h-.01a9.95 9.95 0 0 1-5.057-1.385l-.363-.215-3.755.985 1.005-3.66-.237-.376A9.95 9.95 0 0 1 2.05 12C2.05 6.486 6.535 2 12.05 2c2.654 0 5.151 1.035 7.02 2.916A9.918 9.918 0 0 1 22.05 12c0 5.514-4.486 10-9.999 10z"/></svg>
-            <span>CHAT ADMIN</span>
-          </a>
+      <!-- ============ PAGE 2 ============ -->
+      <section class="slide" id="page2" aria-label="Contoh hasil cinematic">
+        <div class="frame">
+          <span class="bracket bracket--tl" aria-hidden="true"></span>
+          <span class="bracket bracket--tr" aria-hidden="true"></span>
+          <span class="bracket bracket--bl" aria-hidden="true"></span>
+          <span class="bracket bracket--br" aria-hidden="true"></span>
+
+          <div class="container">
+            <!-- Back button -->
+            <button
+              class="back-btn"
+              id="backToHome"
+              type="button"
+              aria-controls="page1"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+              <span>Kembali</span>
+            </button>
+
+            <header class="hero hero--page2">
+              <h1 class="hero__title">
+                CONTOH HASIL<br /><span class="hero__title-gold"
+                  >CINEMATIC</span
+                >
+              </h1>
+              <p class="hero__subtitle">Beberapa contoh hasil video kami.</p>
+            </header>
+
+            <!-- Video showcase grid -->
+            <div class="video-grid">
+              <article class="video-card">
+                <div class="video-card__frame">
+                  <video
+                    controls
+                    poster="image/WhatsApp Image 2026-06-28 at 02.32.01.jpeg"
+                    preload="none"
+                  >
+                    <source src="image/ssstik.io_@_wrld.varo_1782587261704.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="video-card__meta">
+                  <span class="video-card__label">Video 1</span>
+                  <span class="video-card__price">Rp5.000</span>
+                </div>
+              </article>
+
+              <article class="video-card">
+                <div class="video-card__frame">
+                  <video
+                    controls
+                    poster="image/WhatsApp Image 2026-06-28 at 02.32.01.jpeg"
+                    preload="none"
+                  >
+                    <source src="image/ssstik.io_1782587413622 (1).mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="video-card__meta">
+                  <span class="video-card__label">Video 2</span>
+                  <span class="video-card__price">Rp10.000</span>
+                </div>
+              </article>
+
+              <article class="video-card">
+                <div class="video-card__frame">
+                  <video
+                    controls
+                    poster="image/WhatsApp Image 2026-06-28 at 02.32.01.jpeg"
+                    preload="none"
+                  >
+                    <source src="image/ssstik.io_@_wrld.varo_1782587903721.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="video-card__meta">
+                  <span class="video-card__label">Video 3</span>
+                  <span class="video-card__price">Rp15.000</span>
+                </div>
+              </article>
+
+              <article class="video-card">
+                <div class="video-card__frame">
+                  <video
+                    controls
+                    poster="image/WhatsApp Image 2026-06-28 at 02.32.01.jpeg"
+                    preload="none"
+                  >
+                    <source src="image/ssstik.io_@vanzjrmyy_1782587662562 (1).mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="video-card__meta">
+                  <span class="video-card__label">Video 4</span>
+                  <span class="video-card__price">Rp20.000</span>
+                </div>
+              </article>
+            </div>
+
+            <!-- WhatsApp request box -->
+            <div class="request-box">
+              <span class="request-box__rule" aria-hidden="true"></span>
+              <span class="request-box__icon" aria-hidden="true">💬</span>
+              <p class="request-box__text">
+                Kalau mau request cinematic,<br />langsung chat admin ya guys.
+              </p>
+              <a
+                class="btn-chat"
+                href="https://wa.me/6289654524123"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.15.347-.347.521-.521.174-.174.231-.298.347-.497.116-.198.058-.371-.01-.521-.067-.149-.667-1.612-.914-2.207-.241-.579-.487-.5-.668-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.04 3.11 4.943 4.235 2.902 1.124 2.902.749 3.424.7.521-.05 1.758-.717 2.006-1.412.248-.694.248-1.289.173-1.412-.074-.124-.272-.198-.57-.347zM12.05 22h-.01a9.95 9.95 0 0 1-5.057-1.385l-.363-.215-3.755.985 1.005-3.66-.237-.376A9.95 9.95 0 0 1 2.05 12C2.05 6.486 6.535 2 12.05 2c2.654 0 5.151 1.035 7.02 2.916A9.918 9.918 0 0 1 22.05 12c0 5.514-4.486 10-9.999 10z"
+                  />
+                </svg>
+                <span>CHAT ADMIN</span>
+              </a>
+            </div>
+
+            <footer class="footer">
+              <p>&copy; 2026 TripleNine Cinematic. All rights reserved.</p>
+            </footer>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <footer class="footer">
-          <p>&copy; 2026 TripleNine Cinematic. All rights reserved.</p>
-        </footer>
-
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
